@@ -1,0 +1,155 @@
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>VM RECYCL3</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/barralateral.css" />
+    <!-- Scrollbar Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
+    />
+
+    <!-- Font Awesome JS -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+      integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+      integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar  -->
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <h3 class="nombre">VM RECYCL3</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+        <li class="active">
+            <a href="pagina_principal.html">INICIO</a>
+          </li>
+          <li>
+            <a href="datos_reciclaje.html">Datos Importantes</a>
+          </li>
+          <li>
+            <a href="impacto.reciclaje.html">Impactos de el Reciclaje</a>
+              <li>
+                <li>
+            <a href="curiosos_reciclaje.html">Datos Curiosos</a>
+          </li>
+          <li>
+            <a href="info_nosotros.html">Sobre Nosotros</a>
+          </li>
+        </ul>
+
+        <ul class="list-unstyled CTAs"></ul>
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content">
+        <nav class="navbar navbar-light" style="background-color: #2b69b0">
+          <div class="container-fluid">
+            <button
+              style="background-color: #0ccb5f"
+              type="button"
+              id="sidebarCollapse"
+              class="btn btn-info"
+            >
+              <i class="fas fa-align-left"></i>
+              <span>MENU</span>
+            </button>
+            <a class="navbar-brand text-white" href="#">
+               Datos Curioso
+              <img src="img/V.png" width="120" height="100" />
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+ 
+        <br>
+        <h3 class="titulo">Algunos datos curiosos sobre el reciclaje:</h3>
+        <p class="texto">
+           Aquí tienes algunos datos curioso sobre el reciclaje:
+        </p><br>
+        <div class="line"></div>
+
+
+    
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Popper.JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#sidebar").mCustomScrollbar({
+          theme: "minimal",
+        });
+
+        $("#sidebarCollapse").on("click", function () {
+          $("#sidebar, #content").toggleClass("active");
+          $(".collapse.in").toggleClass("in");
+          $("a[aria-expanded=true]").attr("aria-expanded", "false");
+        });
+      });
+    </script>
+
+<h3 class="titulo">El primer sistema moderno de reciclaje></h3><p class="texto"> se estableció en Japón en 1948. Fue introducido en la ciudad de Sakai y se centró en la recolección y reutilización de papel.</p>
+<h3 class="titulo">Se estima que cada tonelada de papel reciclado</h3><p class="texto"> puede salvar aproximadamente 17 árboles, ahorrar energía suficiente para abastecer a un hogar promedio durante seis meses y evitar la emisión de alrededor de 1,7 toneladas de dióxido de carbono.</p>
+<h3 class="titulo">El vidrio puede ser reciclado indefinidamente sin perder calidad.</h3><p class="texto"> Esto significa que una botella de vidrio puede convertirse en otra botella de vidrio una y otra vez, sin limitaciones.</p>
+<h3 class="titulo">Los envases de plástico pueden tardar entre 500 y 1,000 años en degradarse en vertederos.</h3><p class="texto"> Reciclar plástico ayuda a reducir el tiempo que estos materiales permanecen en el medio ambiente.</p>
+<h3 class="titulo">La tasa de reciclaje de aluminio es excepcionalmente alta.</h3><p class="texto"> Se estima que alrededor del 75% de todo el aluminio producido desde la década de 1880 aún está en uso hoy en día debido al reciclaje.</p>
+<h3 class="titulo">En algunas ciudades, el reciclaje puede generar empleos de manera significativa.</h3><p class="texto"> Por ejemplo, en los Estados Unidos, la industria del reciclaje emplea a más de 1.1 millones de personas.</p>
+<h3 class="titulo">Los residuos electrónicos</h3><p class="texto">como teléfonos móviles, computadoras y electrodomésticos, contienen valiosos metales y materiales que se pueden reciclar. Sin embargo, menos del 20% de los residuos electrónicos se reciclan adecuadamente en todo el mundo.</p>
+<h3 class="titulo">Se ha demostrado que el reciclaje reduce la contaminación del aire</h3><p class="texto">. Por ejemplo, la fabricación de papel a partir de fibras recicladas en lugar de pulpa virgen puede reducir las emisiones de gases de efecto invernadero en un 74%.</p>
+<h3 class="titulo">El reciclaje no solo se trata de separar materiales.</h3><p class="texto"> También implica la reducción del consumo y la reutilización de productos. Estas prácticas son igualmente importantes para minimizar los residuos y proteger el medio ambiente.</p>
+<h3 class="titulo">Existen innovaciones en el campo del reciclaje</h3><p class="texto"> como la creación de ladrillos a partir de plástico reciclado, la fabricación de ropa a partir de botellas de plástico recicladas y el desarrollo de envases biodegradables y compostables.</p>
+
+  </body>
+</html>
+
+
+    

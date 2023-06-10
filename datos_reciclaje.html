@@ -1,0 +1,210 @@
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>VM RECYCL3</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/barralateral.css" />
+    <!-- Scrollbar Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
+    />
+
+    <!-- Font Awesome JS -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+      integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+      integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar  -->
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <h3 class="nombre">VM RECYCL3</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+        <li class="active">
+            <a href="pagina_principal.html">INICIO</a>
+          </li>
+          <li>
+            <a href="datos_reciclaje.html">Datos Importantes</a>
+          </li>
+          <li>
+            <a href="impacto.reciclaje.html">Impactos de el Reciclaje</a>
+          </li>
+          <li>
+            <a href="curiosos_reciclaje.html">Datos Curiosos</a>
+          </li>
+          <li>
+            <a href="info_nosotros.html">Sobre Nosotros</a>
+          </li>
+        </ul>
+
+        <ul class="list-unstyled CTAs"></ul>
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content">
+        <nav class="navbar navbar-light" style="background-color: #2b69b0">
+          <div class="container-fluid">
+            <button
+              style="background-color: #0ccb5f"
+              type="button"
+              id="sidebarCollapse"
+              class="btn btn-info"
+            >
+              <i class="fas fa-align-left"></i>
+              <span>MENU</span>
+            </button>
+            <a class="navbar-brand text-white" href="#">
+               Datos Importantes
+              <img src="img/V.png" width="120" height="100" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            </div>
+          </div>
+        </nav>
+
+ 
+        <br>
+        <h3 class="titulo">La importancia de el reciclaje es muy grande</h3>
+        <p class="texto">
+           Aquí tienes algunos datos importantes sobre el reciclaje:
+        </p><br>
+        <div class="line"></div>
+
+
+    
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Popper.JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#sidebar").mCustomScrollbar({
+          theme: "minimal",
+        });
+
+        $("#sidebarCollapse").on("click", function () {
+          $("#sidebar, #content").toggleClass("active");
+          $(".collapse.in").toggleClass("in");
+          $("a[aria-expanded=true]").attr("aria-expanded", "false");
+        });
+      });
+    </script>
+
+        <div class="container-fluid">
+  <div class="px-lg-5">
+
+    <div class="row">
+      <!-- Gallery item -->
+      <div class="col-xl-6 col-lg-4 col-md-6 mb-4">
+          <h2 class="titulo">Mejora la reducción de residuos: </h2>
+        <p class="texto">
+           El reciclaje ayuda a reducir la cantidad de residuos que se envían a los vertederos.
+            Al reciclar, se pueden reutilizar materiales y convertirlos en nuevos productos, 
+            evitando la acumulación de basura y la contaminación del medio ambiente.
+        </p>
+        <div class="bg-white rounded shadow-sm"><img src="img/2.jpg" alt="" class="img-fluid card-img-top">
+          <div class="p-4">
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+
+      <!-- Gallery item -->
+      <div class="col-xl-6 col-lg-4 col-md-6 mb-4">
+        <h2 class="titulo">Conservar recursos naturales:</h2>
+        <p class="texto">
+          El reciclaje ayuda a conservar los recursos naturales, como los árboles,
+           el agua y los minerales. Por ejemplo, al reciclar papel, se evita la tala
+            de árboles y se reducen las emisiones de dióxido de carbono asociadas con
+             la fabricación de papel nuevo.
+        </p>
+        <div class="bg-white rounded shadow-sm"><img src="img/3.jpg" alt="" class="img-fluid card-img-top">
+          <div class="p-4">
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+
+      <!-- Gallery item -->
+      <div class="col-xl-6 col-lg-4 col-md-6 mb-4">
+          <h2 class="titulo">Reducción de la contaminación:</h2>
+        <p class="texto">
+           reciclar puede ayudar a reducir la contaminación del aire y del agua asociada con la extracción, producción y eliminación de materiales. Al reciclar, se evita la liberación de sustancias tóxicas en el medio ambiente
+        </p>
+        <div class="bg-white rounded shadow-sm"><img src="img/4.jpg" alt="" class="img-fluid card-img-top">
+          <div class="p-4">
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+
+      <!-- Gallery item -->
+      <div class="col-xl-6 col-lg-4 col-md-6 mb-4">
+        <h2 class="titulo">Generación de mas empleo:</h2>
+        <p class="texto">
+         La industria del reciclaje puede ayudar a crear mas empleos en diferentes etapas del proceso,
+          desde la recolección y clasificación de materiales hasta la fabricación de
+           productos reciclados. Esto contribuye al crecimiento económico 
+           y a la creación de oportunidades laborales.
+        </p>
+        <div class="bg-white rounded shadow-sm"><img src="img/5.jpg" alt="" class="img-fluid card-img-top">
+          <div class="p-4">
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+      <div class="col-xl-8 col-lg-7 col-md-6 mb-4"></div>
+       <a class="botonnegro btn btn-primary" href="impacto.reciclaje.html">SEGUIR LEYENDO</a>
+
+    </div>
+  </div>
+</div>
+  </body>
+</html>
+
+
+    
